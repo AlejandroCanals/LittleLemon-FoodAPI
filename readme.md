@@ -90,7 +90,7 @@ This API makes it possible end-users to perform certain tasks. It has the follow
         displays user information based on token
         NOTE a user token is required for all features of the API with the exception of registering and viewing the menu
 
-## /api/menu-items
+## /api/menu-items HECHO
 
      
     -GET method:
@@ -105,7 +105,7 @@ This API makes it possible end-users to perform certain tasks. It has the follow
                 title
                 price
 
-## /api/menu-items/category
+## /api/menu-items/category HECHO
 
     
     -GET method:
