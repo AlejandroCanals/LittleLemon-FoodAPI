@@ -1,2 +1,15 @@
 name = admin
 pass = admin
+token = a0674a2eda368d9434ef6ea609b3bd6b33a36ee6
+
+name = Alex
+pass = E!b7f)Cm1_]9
+token = 07638aa20c5d9e60db64c27f5ef9c7eefba620df
+
+
+name = Pedro
+pass = E!b7f)Cm1_]9
+token = 6652b1e831100523c8d30c51c662b39f22fbceef
+{
+	"auth_token": "6652b1e831100523c8d30c51c662b39f22fbceef"
+}

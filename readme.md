@@ -59,7 +59,7 @@ This API makes it possible end-users to perform certain tasks. It has the follow
 
 # API STRUCTURE
 
-## /api/auth/users
+## /api/auth/users HECHO
 
     -GET method: 
         -from Anonomous:
@@ -69,7 +69,7 @@ This API makes it possible end-users to perform certain tasks. It has the follow
         -from Superuser:
             Retrieves all Users information
 
-## /api/auth/users/
+## /api/auth/users/  HECHO
 
     -POST method:
         Allows everyone to register an account when supplied with the data:
@@ -77,7 +77,7 @@ This API makes it possible end-users to perform certain tasks. It has the follow
             password
             email  
                
-## /api/auth/token/login/
+## /api/auth/token/login/ HECHO
 
     -POST method:
         Returns authorization token for given login:
