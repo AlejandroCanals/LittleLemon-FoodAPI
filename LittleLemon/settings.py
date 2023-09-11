@@ -155,6 +155,7 @@ REST_FRAMEWORK = {
 # settings.py
 
 DJOSER = {
+    'USER_ID_FIELD': 'username',
     'USER_MODEL': 'auth.User',
     'TOKEN_MODEL': 'rest_framework.authtoken.models.Token',  # Usa el modelo de token de DRF.
 }

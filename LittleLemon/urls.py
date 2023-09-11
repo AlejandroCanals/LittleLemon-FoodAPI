@@ -21,4 +21,20 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('LittleLemonAPI.urls')),
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.authtoken')),
 ]
+
+"""djoser agrega endpoints predefinods como :
+auth/users
+auth/users/me
+auth/users/confirm
+auth/users/resend_activacion
+auth/users/set_password
+auth/users/reset_password
+auth/users/set_username
+auth/users/reset_username
+auth/users/reset_username_confirm/
+auth/token/login/
+auth/token/logout
+ """

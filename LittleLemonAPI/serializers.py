@@ -2,6 +2,7 @@ from rest_framework import serializers
 from .models import MenuItem, Category, Cart
 from djoser.serializers import UserCreateSerializer
 from django.contrib.auth import get_user_model
+from . import models
 
 #Creacion de Serializers
 """Convierten los objetos complejos como los modelos de las base de datos de 
@@ -18,11 +19,13 @@ class CategorySerializer(serializers.ModelSerializer):
         fields = ['title']
 
 class MenuItemSerializer(serializers.ModelSerializer):
-    #category_id = serializers.IntegerField(write_only=True)
-    #category = CategorySerializer(read_only=True)
+    category = CategorySerializer(read_only=True)
+    category_id = serializers.IntegerField(write_only=True)
     class Meta:
-        model = MenuItem
-        fields = ['title', 'price', 'featured', 'category']
+        model = models.MenuItem
+        fields = ['id', 'title', 'price', 'featured', 'category', 'category_id']
+        depth = 1
+
 
 class CartSerializer(serializers.ModelSerializer):
     class Meta:
