@@ -10,17 +10,18 @@ from django.contrib.auth.models import User
 """Convierten los objetos complejos como los modelos de las base de datos de 
 #django en formados de datos mas simples como JSON ."""
 
+#Usuarios
 class UserSerializer(UserCreateSerializer):
     class Meta:
         model = get_user_model()
         fields = ('id', 'username', 'email', 'password')
 
-class ManagerSerializer(serializers.ModelSerializer):
+class GroupsSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['username']
+        fields = ['id','username']
     
-
+#Categorias e Items
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
@@ -38,3 +39,8 @@ class CartSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cart
         fields = ['id', 'user', 'menuitem', 'quantity', 'unit_price', 'price']
+
+class CartAddSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Cart
+        fields = [ 'menuitem', 'quantity','user']

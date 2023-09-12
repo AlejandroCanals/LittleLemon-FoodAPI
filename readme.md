@@ -127,7 +127,7 @@ This API makes it possible end-users to perform certain tasks. It has the follow
         from Superusers:
             Deletes the given {menuitemId}
 
-## /api/groups/managers/users
+## /api/groups/managers/users COMPLETADO-
 
     -GET method:
         -from Managers and Superusers:
@@ -137,13 +137,13 @@ This API makes it possible end-users to perform certain tasks. It has the follow
             Adds a user to the managers group given:
                 username
 
-## /api/groups/managers/users/{userId}
+## /api/groups/managers/users/{userId} COMPLETADO
 
     -DELETE method:
         from Managers and Superusers:
             Removes the User associated with {userId} from the managers group 
 
-## /api/groups/delivery-crew/users
+## /api/groups/delivery-crew/users COMPLETADO
 
     -GET method:
         -from Managers and Superusers:
@@ -153,7 +153,7 @@ This API makes it possible end-users to perform certain tasks. It has the follow
             Adds a user to the delivery crew group given:
                 username
 
-## /api/groups/delivery-crew/users/{userId}
+## /api/groups/delivery-crew/users/{userId} COMPLETADO
 
     -DELETE method:
         from Managers and Superusers:

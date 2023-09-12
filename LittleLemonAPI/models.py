@@ -18,17 +18,20 @@ class MenuItem(models.Model):
         category = models.ForeignKey(Category, on_delete=models.PROTECT)
         def __str__(self):
                 return self.title
+        
+
 
 class Cart(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     menuitem = models.ForeignKey(MenuItem, on_delete=models.CASCADE)
     quantity = models.SmallIntegerField()
-    unit_price = models.DecimalField(max_digits=6, decimal_places=2)
+    unit_price = models.DecimalField(max_digits=6, decimal_places=2,default=0)
     price = models.DecimalField(max_digits=6, decimal_places=2)
 
     class Meta:
         unique_together = ('menuitem','user')
-
+        def __str__(self):
+                return self.title
 
 class Order(models.Model):
         user = models.ForeignKey(User, on_delete= models.CASCADE)
