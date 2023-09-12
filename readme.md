@@ -59,7 +59,7 @@ This API makes it possible end-users to perform certain tasks. It has the follow
 
 # API STRUCTURE
 
-## /api/auth/users HECHO
+## /api/auth/users COMPLETADO
 
     -GET method: 
         -from Anonomous:
@@ -69,7 +69,7 @@ This API makes it possible end-users to perform certain tasks. It has the follow
         -from Superuser:
             Retrieves all Users information
 
-## /api/auth/users/  HECHO
+## /api/auth/users/  COMPLETADO
 
     -POST method:
         Allows everyone to register an account when supplied with the data:
@@ -77,20 +77,20 @@ This API makes it possible end-users to perform certain tasks. It has the follow
             password
             email  
                
-## /api/auth/token/login/ HECHO
+## /api/auth/token/login/ COMPLETADO
 
     -POST method:
         Returns authorization token for given login:
             username
             password 
 
-## /api/auth/users/me
+## /api/auth/users/me HECHO COMPLETADO
 
     -GET method:
         displays user information based on token
         NOTE a user token is required for all features of the API with the exception of registering and viewing the menu
 
-## /api/menu-items HECHO
+## /api/menu-items COMPLETADO
 
      
     -GET method:
@@ -105,7 +105,7 @@ This API makes it possible end-users to perform certain tasks. It has the follow
                 title
                 price
 
-## /api/menu-items/category HECHO
+## /api/menu-items/category COMPLETADO
 
     
     -GET method:
@@ -116,7 +116,7 @@ This API makes it possible end-users to perform certain tasks. It has the follow
             Adds a category given:
                 slug
 
-## /api/menu-items/{menuitemId}
+## /api/menu-items/{menuitemId}  COMPLETADO-
 
     -GET method:
         Displays all details of the given {menuitemId} 
