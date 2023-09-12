@@ -3,6 +3,8 @@ from .models import MenuItem, Category, Cart
 from djoser.serializers import UserCreateSerializer
 from django.contrib.auth import get_user_model
 from . import models
+from django.contrib.auth.models import User
+
 
 #Creacion de Serializers
 """Convierten los objetos complejos como los modelos de las base de datos de 
@@ -12,6 +14,12 @@ class UserSerializer(UserCreateSerializer):
     class Meta:
         model = get_user_model()
         fields = ('id', 'username', 'email', 'password')
+
+class ManagerSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['username']
+    
 
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:

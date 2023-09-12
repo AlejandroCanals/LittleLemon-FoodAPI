@@ -1,6 +1,7 @@
 from django.contrib import admin
 from . import models
 from .models import MenuItem
+from django.contrib.auth.models import User
 # Register your models here.
 
 
