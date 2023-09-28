@@ -2,6 +2,64 @@
 
 The Little Lemon API is an API for the Little Lemon restaurant. Little Lemon's management wants to have an online-based order management system and mobile application. The LittleLemonAPI is the back-end API that allows customers to browse food items, view the item of the day and place orders. Managers are able to update the item of the day and monitor orders and assign deliveries.  The delivery crew are able to check the orders assigned to them and update an order once it is delivered.
 
+Here are brief instructions for your GitHub README so that any developer who downloads your project can test the Little Lemon API:
+
+---
+
+## Testing the Little Lemon API
+
+The Little Lemon API powers the online order management system and mobile application for the Little Lemon restaurant. It provides various functionalities for different user groups. Follow these steps to test the API:
+
+1. **Clone the Repository:**
+   - Clone or download this project repository from GitHub to your local machine.
+
+2. **Install Dependencies:**
+   - Ensure you have Python and Django installed on your system.
+   - Navigate to the project directory using your terminal.
+   - Run the following command to install project dependencies:
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+3. **Database Setup:**
+   - Run the following commands to set up the database and apply migrations:
+     ```bash
+     python manage.py makemigrations
+     python manage.py migrate
+     ```
+
+4. **Create a Superuser:**
+   - Create a superuser to access the admin panel:
+     ```bash
+     python manage.py createsuperuser
+     ```
+
+5. **Run the Development Server:**
+   - Start the development server with the following command:
+     ```bash
+     python manage.py runserver
+     ```
+
+6. **Access the Admin Panel:**
+   - Open a web browser and navigate to `http://localhost:8000/admin/`.
+   - Log in using the superuser credentials you created earlier.
+
+7. **Explore the API:**
+   - The API endpoints and their functionalities are detailed in the API STRUCTURE section of this README.
+   - Use tools like `curl`, `Postman`, or your preferred API testing client to interact with the API endpoints.
+
+8. **Testing User Roles:**
+   - You can test different user roles (Manager, Delivery Crew, Customer) by assigning users to these groups from the Django admin panel.
+   - Use the provided API endpoints to perform actions based on your user role.
+
+9. **Enjoy Testing:**
+   - Have fun exploring and testing the features and functionalities of the Little Lemon API!
+
+Please refer to the API STRUCTURE section above for a detailed breakdown of available API endpoints and their methods.
+
+---
+
+Feel free to replace "http://localhost:8000" with the appropriate URL if you deploy the API to a different location. Happy testing!
 ## Features
 
 User groups
