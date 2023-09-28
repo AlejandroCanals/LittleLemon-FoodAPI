@@ -55,8 +55,6 @@ The Little Lemon API powers the online order management system and mobile applic
 9. **Enjoy Testing:**
    - Have fun exploring and testing the features and functionalities of the Little Lemon API!
 
-Please refer to the API STRUCTURE section above for a detailed breakdown of available API endpoints and their methods.
-
 ---
 
 Feel free to replace "http://localhost:8000" with the appropriate URL if you deploy the API to a different location. Happy testing!
